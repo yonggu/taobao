@@ -9,5 +9,7 @@ module Taobao
   end
 
   autoload :Client, "taobao/client"
+  autoload :Model, "taobao/model"
+  autoload :TaobaokeItem, "models/taobaoke_item"
+  autoload :TaobaokeShop, "models/taobaoke_shop"
 end
-Dir[File.dirname(__FILE__) + '/models/*.rb'].each {|file| require file }

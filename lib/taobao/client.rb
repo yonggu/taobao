@@ -22,9 +22,10 @@ module Taobao
       str = @app_secret + (params.sort.collect { |param| "#{param[0]}#{param[1]}" }).join("") + @app_secret
       params["sign"] = Digest::MD5.hexdigest(str).upcase!
       res = Net::HTTP.post_form(URI.parse(@endpoint), params)
-      if format == 'json'
+      if params[:format] == 'json'
         JSON.parse(res.body)
-      elsif format == 'xml'
+      elsif params[:format] == 'xml'
+        res.body
       else
         res.body
       end

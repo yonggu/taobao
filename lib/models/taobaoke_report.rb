@@ -1,5 +1,5 @@
 module Taobao
-  class TaobaokeReport
+  class TaobaokeReport < Model
     def self.attr_names
       [:taobaoke_report_members, :total_results]
     end

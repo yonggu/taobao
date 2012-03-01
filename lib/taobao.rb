@@ -12,6 +12,8 @@ module Taobao
   autoload :Model, "taobao/model"
   autoload :TaobaokeItem, "models/taobaoke_item"
   autoload :TaobaokeShop, "models/taobaoke_shop"
+  autoload :TaobaokeReport, "models/taobaoke_report"
+  autoload :TaobaokeReportMember, "models/taobaoke_report_member"
   autoload :Trade, "models/trade"
   autoload :Order, "models/order"
   autoload :PromotionDetail, "models/promotion_detail"

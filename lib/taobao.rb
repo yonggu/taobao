@@ -17,4 +17,5 @@ module Taobao
   autoload :Trade, "models/trade"
   autoload :Order, "models/order"
   autoload :PromotionDetail, "models/promotion_detail"
+  autoload :Item, "models/item"
 end

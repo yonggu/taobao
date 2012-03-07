@@ -18,4 +18,6 @@ module Taobao
   autoload :Order, "models/order"
   autoload :PromotionDetail, "models/promotion_detail"
   autoload :Item, "models/item"
+  autoload :Task, "models/task"
+  autoload :Subtask, "models/subtask"
 end

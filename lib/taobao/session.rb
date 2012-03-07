@@ -16,6 +16,10 @@ module Taobao
       end
     end
 
+    def invoke(method, options = {})
+      Client.new(method, options).invoke
+    end
+
     class InvalidSignature < Exception
 
     end

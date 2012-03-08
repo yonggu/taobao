@@ -20,4 +20,5 @@ module Taobao
   autoload :Item, "models/item"
   autoload :Task, "models/task"
   autoload :Subtask, "models/subtask"
+  autoload :Shop, "models/shop"
 end
